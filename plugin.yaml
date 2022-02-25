@@ -1,0 +1,6 @@
+name: backend-express-beagle
+description: Stack typescript with express for backend
+types:
+  - app
+tags:
+  - "backend-express"

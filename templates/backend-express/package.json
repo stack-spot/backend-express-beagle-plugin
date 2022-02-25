@@ -1,0 +1,16 @@
+{
+  "name": "{{inputs.application_name|lower}}",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@zup-it/beagle-backend-components": "^1.0.0-beta.1",
+    "@zup-it/beagle-backend-core": "^1.0.0-beta.1",
+    "@zup-it/beagle-backend-express": "^1.0.0-beta.1"
+  },
+  "devDependencies": {
+  }
+}
