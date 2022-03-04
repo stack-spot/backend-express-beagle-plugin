@@ -1,3 +1,4 @@
+{% raw %}
 import { BeagleJSX } from '@zup-it/beagle-backend-core'
 import { Screen } from '@zup-it/beagle-backend-express'
 import { Button, colors, Container, Image, Text } from '@zup-it/beagle-backend-components'
@@ -21,3 +22,5 @@ export const Welcome: Screen = ({ navigator }) => (
     <Button style={{ marginTop: 40 }} onPress={navigator.pushView(Home)}>Navigate to Home Page</Button>
   </Container>
 )
+
+{% endraw %}
