@@ -4,15 +4,17 @@ import { Screen } from '@zup-it/beagle-backend-express'
 import { globalContext } from '../global-context'
 import { gte, length } from '@zup-it/beagle-backend-core/operations'
 
+const style = { marginTop: 40 }
+
 export const Home: Screen = ({ navigator }) => (
   <>
     <Text>Hello!</Text>
-    <Text style={{ marginTop: 40 }}>This is the Home Page!</Text>
+    <Text style={style}>This is the Home Page!</Text>
     <If condition={gte(length(globalContext.get('message') ?? ''), 0)}>
       <Then>
-        <Text style={{ marginTop: 40 }}>Global context: {globalContext.get('message')}</Text>
+        <Text style={style}>Global context: {globalContext.get('message')}</Text>
       </Then>
     </If>    
-    <Button style={{ marginTop: 40 }} onPress={navigator.popView()}>Go back</Button>
+    <Button style={style} onPress={navigator.popView()}>Go back</Button>
   </>
 )
